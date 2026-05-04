@@ -136,7 +136,7 @@
       </div>
     </section>
 
-  <!-- ========== FOOTER COMMUN ========== -->
+  <!-- ========== FOOTER ========== -->
   <footer class="site-footer">
     <div class="site-footer-inner">
       <div class="footer-logo-col">
@@ -145,20 +145,9 @@
       </div>
       <div class="footer-cols">
         <div class="footer-col">
-          <p class="footer-col-title">Pages</p>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="autumn.html">Autumn</a></li>
-            <li><a href="winter.html">Winter</a></li>
-            <li><a href="spring.html">Spring</a></li>
-            <li><a href="summer.html">Summer</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
           <p class="footer-col-title">Info</p>
           <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms &amp; Conditions</a></li>
           </ul>
@@ -166,17 +155,19 @@
         <div class="footer-col">
           <p class="footer-col-title">Follow</p>
           <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Pinterest</a></li>
-            <li><a href="#">TikTok</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">Pinterest</a></li>
+            <li><a href="#" target="_blank">TikTok</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <p class="footer-col-title">Stay Inspired</p>
-          <div class="subscribe-row">
-            <input type="email" placeholder="Your email" class="subscribe-input" />
-            <button class="subscribe-btn">Subscribe</button>
-          </div>
+        <div class="footer-col footer-col--form">
+          <p class="footer-col-title">Contact</p>
+          <form class="footer-form" action="#" method="post">
+            <input type="text" name="firstname" placeholder="First name" required />
+            <input type="email" name="email" placeholder="Email address" required />
+            <textarea name="message" placeholder="Your message..." rows="3" required></textarea>
+            <button type="submit">Send</button>
+          </form>
         </div>
       </div>
     </div>
