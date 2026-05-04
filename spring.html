@@ -1,185 +1,1414 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spring — The Trend Journal</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
-</head>
-<body class="spring-page">
+/* ============================================================
+   THE TREND JOURNAL — style.css
+   ============================================================
+   SOMMAIRE
+   1. GLOBAL           — reset, variables, base
+   2. HEADER           — navigation commune
+   3. FOOTER           — footer commun
+   4. HOME PAGE ONLY   — styles spécifiques à index.html
+   5. AUTUMN PAGE ONLY — styles spécifiques à autumn.html
+   6. WINTER PAGE ONLY — styles spécifiques à winter.html
+   7. SPRING PAGE ONLY — styles spécifiques à spring.html
+   8. SUMMER PAGE ONLY — styles spécifiques à summer.html
+   9. RESPONSIVE       — media queries
+   ============================================================ */
 
-  <!-- ========== HEADER ========== -->
-  <header class="site-header">
-    <div class="site-header-inner">
-      <a href="index.html" class="site-logo">The Trend <em>Journal</em></a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="spring.html" class="active">Spring</a></li>
-          <li><a href="summer.html">Summer</a></li>
-          <li><a href="autumn.html">Autumn</a></li>
-          <li><a href="winter.html">Winter</a></li>
-        </ul>
-      </nav>
-      <span class="search-icon" aria-hidden="true">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-        </svg>
-      </span>
-    </div>
-  </header>
-
-  <main>
-
-    <!-- ========== HERO ========== -->
-    <section class="spring-hero">
-      <div class="spring-hero-img">
-        <img src="images/springmoodboard.PNG" alt="Spring 2025–2026" />
-        <div class="spring-hero-overlay">
-          <h1 class="spring-hero-title">SPRING</h1>
-          <p class="spring-hero-year">2025 — 2026</p>
-          <p class="spring-hero-desc">A season of renewal — soft silhouettes,<br/>romantic details and effortless femininity.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 01 : FLORAL ROMANCE ========== -->
-    <section class="trend-section">
-      <div class="trend-layout">
-        <div class="trend-text-col">
-          <span class="trend-number">01</span>
-          <h2 class="trend-title">Floral<br/>Romance</h2>
-          <div class="trend-divider"></div>
-          <p class="trend-desc">Delicate floral prints return as a key element of spring dressing, bringing freshness and elegance to every look.</p>
-          <a href="#" class="trend-link">Discover more &rarr;</a>
-        </div>
-        <div class="trend-grid-col">
-          <div class="trend-grid">
-            <div class="tg-img"><img src="images/spring1.jpg" alt="Floral 1" /></div>
-            <div class="tg-img"><img src="images/spring2.jpg" alt="Floral 2" /></div>
-            <div class="tg-img"><img src="images/spring3.jpg" alt="Floral 3" /></div>
-            <div class="tg-img"><img src="images/spring4.jpg" alt="Floral 4" /></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 02 : SOFT LACE ========== -->
-    <section class="trend-section">
-      <div class="trend-layout">
-        <div class="trend-text-col">
-          <span class="trend-number">02</span>
-          <h2 class="trend-title">Soft<br/>Lace</h2>
-          <div class="trend-divider"></div>
-          <p class="trend-desc">Lace pieces embody softness and femininity, creating light and refined silhouettes perfect for the season.</p>
-          <a href="#" class="trend-link">Discover more &rarr;</a>
-        </div>
-        <div class="trend-grid-col">
-          <div class="trend-grid">
-            <div class="tg-img"><img src="images/lace1.jpg" alt="Lace 1" /></div>
-            <div class="tg-img"><img src="images/lace2.jpg" alt="Lace 2" /></div>
-            <div class="tg-img"><img src="images/lace3.jpg" alt="Lace 3" /></div>
-            <div class="tg-img"><img src="images/lace4.jpg" alt="Lace 4" /></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 03 : BOHEMIAN SPIRIT ========== -->
-    <section class="trend-section">
-      <div class="trend-layout">
-        <div class="trend-text-col">
-          <span class="trend-number">03</span>
-          <h2 class="trend-title">Bohemian<br/>Spirit</h2>
-          <div class="trend-divider"></div>
-          <p class="trend-desc">Flowing fabrics, layered textures and relaxed silhouettes define the bohemian trend this spring.</p>
-          <a href="#" class="trend-link">Discover more &rarr;</a>
-        </div>
-        <div class="trend-grid-col">
-          <div class="trend-grid">
-            <div class="tg-img"><img src="images/boho1.jpg" alt="Boho 1" /></div>
-            <div class="tg-img"><img src="images/boho2.jpg" alt="Boho 2" /></div>
-            <div class="tg-img"><img src="images/boho3.jpg" alt="Boho 3" /></div>
-            <div class="tg-img"><img src="images/boho4.jpg" alt="Boho 4" /></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 04 : SPRING PALETTE ========== -->
-    <section class="trend-section">
-      <div class="trend-layout">
-        <div class="trend-text-col">
-          <span class="trend-number">04</span>
-          <h2 class="trend-title">Spring<br/>Palette</h2>
-          <div class="trend-divider"></div>
-          <p class="trend-desc">Soft pinks, sage greens and creamy whites capture the delicate and luminous spirit of the season.</p>
-          <a href="#" class="trend-link">Discover more &rarr;</a>
-        </div>
-        <div class="trend-grid-col">
-          <div class="palette-row">
-            <div class="palette-swatches palette-main">
-              <div class="palette-swatch" style="background:#FADADD;" title="Baby Pink"></div>
-              <div class="palette-swatch" style="background:#E6D6F2;" title="Soft Lilac"></div>
-              <div class="palette-swatch" style="background:#CFE8FF;" title="Baby Blue"></div>
-            </div>
-            <div class="palette-swatches palette-secondary">
-              <div class="palette-swatch" style="background:#DCE8D5;" title="Light Sage Green"></div>
-              <div class="palette-swatch" style="background:#FFF2CC;" title="Butter Yellow"></div>
-              <div class="palette-swatch" style="background:#F8F5F0;" title="Cream White"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500&display=swap');
 
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="site-footer">
-    <div class="site-footer-inner">
-      <div class="footer-logo-col">
-        <p class="footer-brand">The Trend Journal</p>
-        <p class="footer-tagline">A digital fashion journal by Clémence</p>
-      </div>
-      <div class="footer-cols">
-        <div class="footer-col">
-          <p class="footer-col-title">Pages</p>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="spring.html">Spring</a></li>
-            <li><a href="summer.html">Summer</a></li>
-            <li><a href="autumn.html">Autumn</a></li>
-            <li><a href="winter.html">Winter</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <p class="footer-col-title">Info</p>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms &amp; Conditions</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <p class="footer-col-title">Follow</p>
-          <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Pinterest</a></li>
-            <li><a href="#">TikTok</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <p class="footer-col-title">Stay Inspired</p>
-          <div class="subscribe-row">
-            <input type="email" placeholder="Your email" class="subscribe-input" />
-            <button class="subscribe-btn">Subscribe</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+/* ============================================================
+   1. GLOBAL
+   ============================================================ */
 
-</body>
-</html>
+:root {
+  --bg:        #F3EFE9;
+  --white:     #FFFFFF;
+  --off-white: #FAF8F5;
+  --beige:     #E8DDD0;
+  --dark:      #2A2A2A;
+  --grey:      #888888;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Poppins', sans-serif;
+  --radius: 8px;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--dark);
+  font-family: var(--font-body);
+  font-weight: 300;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a  { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+
+/* ============================================================
+   2. HEADER  (commun à toutes les pages)
+   ============================================================ */
+
+.site-header {
+  background-color: var(--off-white);
+  border-bottom: 1px solid var(--beige);
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-logo {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--dark);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.site-logo em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 0;
+}
+
+.nav-links li a {
+  display: inline-block;
+  padding: 8px 16px;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--grey);
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover  { color: var(--dark); }
+
+.nav-links li a.active {
+  color: var(--dark);
+  border-bottom: 1.5px solid var(--dark);
+}
+
+.search-icon {
+  color: var(--dark);
+  cursor: default;
+  display: flex;
+  align-items: center;
+}
+
+
+/* ============================================================
+   3. FOOTER  (commun à toutes les pages)
+   ============================================================ */
+
+.site-footer {
+  background-color: var(--off-white);
+  border-top: 1px solid var(--beige);
+  padding: 60px 40px 40px;
+}
+
+.site-footer-inner {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.footer-tagline {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--grey);
+}
+
+.footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer-col-title {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--dark);
+  margin-bottom: 16px;
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-col ul li a {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--grey);
+  transition: color 0.2s;
+}
+
+.footer-col ul li a:hover { color: var(--dark); }
+
+.subscribe-row { display: flex; }
+
+.subscribe-input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid var(--beige);
+  border-right: none;
+  background: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--dark);
+  outline: none;
+}
+
+.subscribe-input::placeholder { color: var(--grey); }
+
+.subscribe-btn {
+  padding: 10px 16px;
+  background: var(--dark);
+  color: #fff;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.subscribe-btn:hover { opacity: 0.75; }
+
+
+/* ============================================================
+   4. HOME PAGE ONLY   (body.home-page)
+   ============================================================ */
+
+.home-page .section-moodboard {
+  background-color: var(--off-white);
+  padding: 40px 40px 50px;
+}
+
+.home-page .moodboard-grid {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home-page .col-side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  height: 460px;
+}
+
+.home-page .col-center { flex: 1.3; }
+
+.home-page .mb-item {
+  overflow: hidden;
+  border-radius: var(--radius);
+  flex-grow: 1;
+}
+
+.home-page .mb-center {
+  height: 460px;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.home-page .mb-item img,
+.home-page .mb-center img {
+  transition: transform 0.5s ease;
+}
+
+.home-page .mb-item:hover img,
+.home-page .mb-center:hover img {
+  transform: scale(1.04);
+}
+
+.home-page .section-intro {
+  text-align: center;
+  padding: 60px 30px 50px;
+  background-color: var(--off-white);
+}
+
+.home-page .intro-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  font-weight: 400;
+  color: var(--dark);
+  margin-bottom: 18px;
+}
+
+.home-page .intro-title em {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.home-page .intro-text {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: var(--grey);
+  line-height: 1.9;
+}
+
+.home-page .section-era {
+  background-color: var(--white);
+  padding: 70px 30px;
+  text-align: center;
+  border-top: 1px solid var(--beige);
+}
+
+.home-page .era-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--dark);
+  margin-bottom: 28px;
+}
+
+.home-page .era-body {
+  max-width: 620px;
+  margin: 0 auto 36px;
+}
+
+.home-page .era-body p {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #666;
+  line-height: 1.9;
+  margin-bottom: 14px;
+}
+
+.home-page .era-quote {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--dark);
+  border-top: 1px solid var(--beige);
+  border-bottom: 1px solid var(--beige);
+  padding: 18px 40px;
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+.home-page .section-seasons {
+  background-color: var(--bg);
+  padding: 20px 40px 60px;
+}
+
+.home-page .seasons-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--dark);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.home-page .seasons-grid {
+  display: flex;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home-page .season-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.home-page .season-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.home-page .season-img img { transition: transform 0.5s ease; }
+
+.home-page .season-card:hover .season-img img { transform: scale(1.05); }
+
+.home-page .season-label {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: var(--dark);
+  text-align: center;
+}
+
+.home-page .section-about {
+  background-color: var(--off-white);
+  text-align: center;
+  padding: 60px 30px;
+  border-top: 1px solid var(--beige);
+}
+
+.home-page .about-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 400;
+  color: var(--dark);
+  margin-bottom: 16px;
+}
+
+.home-page .about-text {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--grey);
+  line-height: 1.9;
+}
+
+
+/* ============================================================
+   5. AUTUMN PAGE ONLY   (body.autumn-page)
+   ============================================================ */
+
+.autumn-page .autumn-hero { padding: 40px 40px 0; }
+
+.autumn-page .autumn-hero-img {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.autumn-page .autumn-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.autumn-page .autumn-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.15) 50%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.autumn-page .autumn-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(60px, 10vw, 110px);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.autumn-page .autumn-hero-year {
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-weight: 300;
+  letter-spacing: 0.35em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.autumn-page .autumn-hero-desc {
+  font-family: var(--font-display);
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+  font-style: italic;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.7;
+}
+
+.autumn-page .trend-section {
+  padding: 100px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--beige);
+}
+
+.autumn-page .trend-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.autumn-page .trend-text-col { padding-top: 10px; }
+
+.autumn-page .trend-number {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--grey);
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.autumn-page .trend-title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.autumn-page .trend-divider {
+  width: 40px;
+  height: 1.5px;
+  background-color: var(--dark);
+  margin-bottom: 22px;
+}
+
+.autumn-page .trend-desc {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.autumn-page .trend-link {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dark);
+  border-bottom: 1px solid var(--dark);
+  padding-bottom: 2px;
+  transition: opacity 0.2s;
+}
+
+.autumn-page .trend-link:hover { opacity: 0.5; }
+
+.autumn-page .trend-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.autumn-page .tg-img {
+  border-radius: 6px;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+}
+
+.autumn-page .tg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.autumn-page .tg-img:hover img { transform: scale(1.04); }
+
+.autumn-page .palette-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.autumn-page .palette-swatches { display: flex; gap: 8px; }
+
+.autumn-page .palette-main .palette-swatch {
+  height: 140px;
+  flex: 1;
+  border-radius: 4px;
+}
+
+.autumn-page .palette-secondary .palette-swatch {
+  height: 80px;
+  flex: 1;
+  border-radius: 4px;
+}
+
+
+/* ============================================================
+   6. WINTER PAGE ONLY   (body.winter-page)
+   ============================================================ */
+
+.winter-page .winter-hero { padding: 40px 40px 0; }
+
+.winter-page .winter-hero-img {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.winter-page .winter-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.winter-page .winter-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.15) 50%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.winter-page .winter-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(60px, 10vw, 110px);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.winter-page .winter-hero-year {
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-weight: 300;
+  letter-spacing: 0.35em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.winter-page .winter-hero-desc {
+  font-family: var(--font-display);
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+  font-style: italic;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.7;
+}
+
+.winter-page .trend-section {
+  padding: 100px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--beige);
+}
+
+.winter-page .trend-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.winter-page .trend-text-col { padding-top: 10px; }
+
+.winter-page .trend-number {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--grey);
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.winter-page .trend-title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.winter-page .trend-divider {
+  width: 40px;
+  height: 1.5px;
+  background-color: var(--dark);
+  margin-bottom: 22px;
+}
+
+.winter-page .trend-desc {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.winter-page .trend-link {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dark);
+  border-bottom: 1px solid var(--dark);
+  padding-bottom: 2px;
+  transition: opacity 0.2s;
+}
+
+.winter-page .trend-link:hover { opacity: 0.5; }
+
+.winter-page .trend-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.winter-page .tg-img {
+  border-radius: 6px;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+}
+
+.winter-page .tg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.winter-page .tg-img:hover img { transform: scale(1.04); }
+
+.winter-page .palette-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.winter-page .palette-swatches { display: flex; gap: 8px; }
+
+.winter-page .palette-main .palette-swatch {
+  height: 140px;
+  flex: 1;
+  border-radius: 4px;
+}
+
+.winter-page .palette-secondary .palette-swatch {
+  height: 80px;
+  flex: 1;
+  border-radius: 4px;
+}
+
+
+/* ============================================================
+   7. SPRING PAGE ONLY   (body.spring-page)
+   ============================================================ */
+
+.spring-page .spring-hero { padding: 40px 40px 0; }
+
+.spring-page .spring-hero-img {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spring-page .spring-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.spring-page .spring-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.1) 50%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.spring-page .spring-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(60px, 10vw, 110px);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.spring-page .spring-hero-year {
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-weight: 300;
+  letter-spacing: 0.35em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.spring-page .spring-hero-desc {
+  font-family: var(--font-display);
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+  font-style: italic;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.7;
+}
+
+.spring-page .trend-section {
+  padding: 100px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--beige);
+}
+
+.spring-page .trend-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.spring-page .trend-text-col { padding-top: 10px; }
+
+.spring-page .trend-number {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--grey);
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.spring-page .trend-title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.spring-page .trend-divider {
+  width: 40px;
+  height: 1.5px;
+  background-color: var(--dark);
+  margin-bottom: 22px;
+}
+
+.spring-page .trend-desc {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.spring-page .trend-link {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dark);
+  border-bottom: 1px solid var(--dark);
+  padding-bottom: 2px;
+  transition: opacity 0.2s;
+}
+
+.spring-page .trend-link:hover { opacity: 0.5; }
+
+.spring-page .trend-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.spring-page .tg-img {
+  border-radius: 6px;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+}
+
+.spring-page .tg-img--empty {
+  border-radius: 6px;
+  aspect-ratio: 3/4;
+  background-color: transparent;
+}
+
+.spring-page .tg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.spring-page .tg-img:hover img { transform: scale(1.04); }
+
+.spring-page .palette-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.spring-page .palette-swatches { display: flex; gap: 8px; }
+
+.spring-page .palette-main .palette-swatch {
+  height: 140px;
+  flex: 1;
+  border-radius: 4px;
+}
+
+.spring-page .palette-secondary .palette-swatch {
+  height: 80px;
+  flex: 1;
+  border-radius: 4px;
+}
+
+
+/* ============================================================
+   8. SUMMER PAGE ONLY   (body.summer-page)
+   ============================================================ */
+
+.summer-page .summer-hero { padding: 40px 40px 0; }
+
+.summer-page .summer-hero-img {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.summer-page .summer-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.summer-page .summer-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0.12) 50%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.summer-page .summer-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(60px, 10vw, 110px);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.summer-page .summer-hero-year {
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-weight: 300;
+  letter-spacing: 0.35em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.summer-page .summer-hero-desc {
+  font-family: var(--font-display);
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+  font-style: italic;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.7;
+}
+
+.summer-page .trend-section {
+  padding: 100px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--beige);
+}
+
+.summer-page .trend-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.summer-page .trend-text-col { padding-top: 10px; }
+
+.summer-page .trend-number {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--grey);
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.summer-page .trend-title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.summer-page .trend-divider {
+  width: 40px;
+  height: 1.5px;
+  background-color: var(--dark);
+  margin-bottom: 22px;
+}
+
+.summer-page .trend-desc {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.summer-page .trend-link {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dark);
+  border-bottom: 1px solid var(--dark);
+  padding-bottom: 2px;
+  transition: opacity 0.2s;
+}
+
+.summer-page .trend-link:hover { opacity: 0.5; }
+
+.summer-page .trend-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.summer-page .tg-img {
+  border-radius: 6px;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+}
+
+.summer-page .tg-img--empty {
+  border-radius: 6px;
+  aspect-ratio: 3/4;
+  background-color: transparent;
+}
+
+.summer-page .tg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.summer-page .tg-img:hover img { transform: scale(1.04); }
+
+.summer-page .trend-title--long {
+  font-size: clamp(24px, 2.8vw, 38px);
+}
+
+.summer-page .palette-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.summer-page .palette-swatches { display: flex; gap: 8px; }
+
+.summer-page .palette-main .palette-swatch {
+  height: 140px;
+  flex: 1;
+  border-radius: 4px;
+}
+
+.summer-page .palette-secondary .palette-swatch {
+  height: 80px;
+  flex: 1;
+  border-radius: 4px;
+}
+
+
+/* ============================================================
+   9. CONTACT PAGE ONLY   (body.contact-page)
+   ============================================================ */
+
+.contact-page .contact-hero {
+  text-align: center;
+  padding: 80px 40px 60px;
+  background-color: var(--off-white);
+  border-bottom: 1px solid var(--beige);
+}
+
+.contact-page .contact-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-bottom: 16px;
+}
+
+.contact-page .contact-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--dark);
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.contact-page .contact-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--grey);
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.contact-page .contact-section {
+  padding: 80px 40px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-page .contact-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.contact-page .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding-top: 8px;
+}
+
+.contact-page .contact-info-label {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-bottom: 6px;
+}
+
+.contact-page .contact-info-value {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--dark);
+}
+
+/* Formulaire */
+.contact-page .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-page .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contact-page .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-page .form-group label {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+.contact-page .required {
+  color: var(--dark);
+  font-style: italic;
+}
+
+.contact-page .form-group input,
+.contact-page .form-group textarea {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: var(--dark);
+  background-color: var(--white);
+  border: 1px solid var(--beige);
+  padding: 14px 16px;
+  outline: none;
+  border-radius: 0;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.contact-page .form-group input::placeholder,
+.contact-page .form-group textarea::placeholder {
+  color: #bbb;
+}
+
+.contact-page .form-group input:focus,
+.contact-page .form-group textarea:focus {
+  border-color: var(--dark);
+}
+
+.contact-page .form-group textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.contact-page .form-btn {
+  align-self: flex-start;
+  padding: 14px 36px;
+  background-color: var(--dark);
+  color: #fff;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.contact-page .form-btn:hover { opacity: 0.7; }
+
+
+/* ============================================================
+   FOOTER FORMULAIRE CONTACT
+   ============================================================ */
+
+.footer-cols {
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-form input,
+.footer-form textarea {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 300;
+  color: var(--dark);
+  background-color: var(--white);
+  border: 1px solid var(--beige);
+  padding: 9px 12px;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+.footer-form input::placeholder,
+.footer-form textarea::placeholder { color: #bbb; }
+
+.footer-form input:focus,
+.footer-form textarea:focus { border-color: var(--dark); }
+
+.footer-form textarea { resize: none; }
+
+.footer-form button[type="submit"] {
+  align-self: flex-start;
+  padding: 9px 22px;
+  background-color: var(--dark);
+  color: #fff;
+  border: none;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-top: 4px;
+}
+
+.footer-form button[type="submit"]:hover { opacity: 0.7; }
+
+
+/* ============================================================
+   10. RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  /* Header */
+  .site-header { padding: 0 20px; }
+  .nav-links { flex-wrap: wrap; justify-content: center; }
+  .nav-links li a { padding: 6px 10px; font-size: 0.65rem; }
+
+  /* Footer */
+  .site-footer { padding: 40px 20px; }
+  .site-footer-inner { grid-template-columns: 1fr; gap: 30px; }
+  .footer-cols { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .footer-col--form { grid-column: 1 / -1; }
+  .footer-form button[type="submit"] { width: 100%; text-align: center; }
+
+  /* HOME */
+  .home-page .section-moodboard { padding: 24px 16px 30px; }
+  .home-page .moodboard-grid    { flex-direction: column; gap: 8px; }
+  .home-page .col-side          { flex-direction: row; height: auto; }
+  .home-page .col-side .mb-item { height: 140px; }
+  .home-page .mb-center         { height: 280px; }
+  .home-page .seasons-grid      { flex-wrap: wrap; gap: 14px; }
+  .home-page .season-card       { flex: 1 1 calc(50% - 7px); }
+  .home-page .season-img        { height: 150px; }
+  .home-page .section-seasons   { padding: 20px 16px 40px; }
+  .home-page .section-intro     { padding: 40px 20px; }
+  .home-page .section-about     { padding: 40px 20px; }
+
+  /* AUTUMN */
+  .autumn-page .autumn-hero     { padding: 20px 16px 0; }
+  .autumn-page .autumn-hero-img { height: 320px; border-radius: 8px; }
+  .autumn-page .trend-section   { padding: 60px 16px; }
+  .autumn-page .trend-layout    { grid-template-columns: 1fr; gap: 36px; }
+  .autumn-page .trend-grid      { grid-template-columns: 1fr; }
+  .autumn-page .tg-img          { aspect-ratio: 4/3; }
+  .autumn-page .palette-main .palette-swatch      { height: 90px; }
+  .autumn-page .palette-secondary .palette-swatch { height: 60px; }
+
+  /* WINTER */
+  .winter-page .winter-hero     { padding: 20px 16px 0; }
+  .winter-page .winter-hero-img { height: 320px; border-radius: 8px; }
+  .winter-page .trend-section   { padding: 60px 16px; }
+  .winter-page .trend-layout    { grid-template-columns: 1fr; gap: 36px; }
+  .winter-page .trend-grid      { grid-template-columns: 1fr; }
+  .winter-page .tg-img          { aspect-ratio: 4/3; }
+  .winter-page .palette-main .palette-swatch      { height: 90px; }
+  .winter-page .palette-secondary .palette-swatch { height: 60px; }
+
+  /* SPRING */
+  .spring-page .spring-hero     { padding: 20px 16px 0; }
+  .spring-page .spring-hero-img { height: 320px; border-radius: 8px; }
+  .spring-page .trend-section   { padding: 60px 16px; }
+  .spring-page .trend-layout    { grid-template-columns: 1fr; gap: 36px; }
+  .spring-page .trend-grid      { grid-template-columns: 1fr; }
+  .spring-page .tg-img          { aspect-ratio: 4/3; }
+  .spring-page .palette-main .palette-swatch      { height: 90px; }
+  .spring-page .palette-secondary .palette-swatch { height: 60px; }
+
+  /* SUMMER */
+  .summer-page .summer-hero     { padding: 20px 16px 0; }
+  .summer-page .summer-hero-img { height: 320px; border-radius: 8px; }
+  .summer-page .trend-section   { padding: 60px 16px; }
+  .summer-page .trend-layout    { grid-template-columns: 1fr; gap: 36px; }
+  .summer-page .trend-grid      { grid-template-columns: 1fr; }
+  .summer-page .tg-img          { aspect-ratio: 4/3; }
+  .summer-page .palette-main .palette-swatch      { height: 90px; }
+  .summer-page .palette-secondary .palette-swatch { height: 60px; }
+
+  /* CONTACT */
+  .contact-page .contact-hero    { padding: 50px 20px 40px; }
+  .contact-page .contact-section { padding: 40px 20px 60px; }
+  .contact-page .contact-grid    { grid-template-columns: 1fr; gap: 40px; }
+  .contact-page .form-row        { grid-template-columns: 1fr; }
+  .contact-page .form-btn        { width: 100%; text-align: center; }
+}
